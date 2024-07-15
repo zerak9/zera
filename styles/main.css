@@ -417,11 +417,12 @@ html {
 }
 
 .flag{
-  width: 175%;
-  height: 175%;
+  width: 135px;
+  height: 135px;
   border-radius: 50%;
-  margin-left: -37%;
-  margin-top: 37%;
+  margin-left: 0.665px;
+  margin-top: 21px;
+  display: block;
 }
 
 
