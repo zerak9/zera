@@ -1,9 +1,11 @@
 /* Main-content CSS */
+@import "/node_modules/flag-icons/css/flag-icons.min.css";
+
 body {
   font-family: "Nunito", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #000;
+  background-color: #f8f8f8;
 }
 
 #main-content {
@@ -91,13 +93,13 @@ html {
   max-width: 70rem;
   background-color: var(--color-gray-light-2);
   display: flex;
-  box-shadow: 0px 0px 15px 4px #b3b3b3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .intro {
   flex: 0 0 250px;
   background-color: var(--color-gray-light-1);
-  box-shadow: 5px 0px 15px 0px #b3b3b3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 5;
 }
 .profile {
@@ -322,6 +324,11 @@ html {
   height: 4px;
   background-color: var(--profile-theme);
 }
+
+
+
+
+/*Circle*/
 .tool-list {
   list-style: none;
   display: flex;
@@ -338,6 +345,7 @@ html {
   width: 100%;
   transform: rotate(-90deg);
 }
+
 .tool-list > li > svg > circle {
   stroke-width: 1px;
   stroke: #cdcdcd;
@@ -389,7 +397,36 @@ html {
   opacity: 1; 
 }
 
-/* Interests Section */
+.tool-list > li > .tl-exp-lang {
+  position: absolute;
+  left: 50%;
+  color: var(--color-gray-dark-1);
+}
+
+.tool-list > li > .tl-exp-lang {
+  top: calc(50% + 1.4rem); 
+  left: 50%; 
+  top: 50%;
+  transform: translate(-50%, -50%); 
+  font-size: 1.2rem; 
+  opacity: 0; 
+  transition: opacity 0.3s ease-out; 
+}
+.tool-list > li:hover > .tl-exp-lang {
+  opacity: 1; 
+}
+
+.flag{
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  margin-top: 27.5px;
+  margin-left: 0.5px;
+  left: 50%; 
+  top: 50%;
+}
+
+
 .outer-frame {
   border: 1px solid var(--color-gray-dark-3);
   border-radius: 5px;
