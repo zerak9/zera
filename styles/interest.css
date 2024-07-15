@@ -1,6 +1,4 @@
-/* styles.css */
 
-/* Genel stil ayarları */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -62,7 +60,6 @@ footer {
     width: 100%;
 }
 
-/* Medya sorguları */
 @media (max-width: 768px) {
     header ul li {
         display: block;

@@ -83,7 +83,7 @@ html {
 }
 
 #main-content.fade-in {
-  opacity: 1; /* Opaklığı artırır */
+  opacity: 1; 
 }
 
 .wrapper {
@@ -293,7 +293,7 @@ html {
   animation: circle 1.2s infinite;
 }
 
-/* Programming skills section */
+/* language section */
 .pg-list,
 .tool-list,
 .favor-list {
@@ -364,32 +364,32 @@ html {
 }
 
 .tool-list > li > .tl-name {
-  top: 50%; /* Yatay merkezleme */
-  left: 50%; /* Dikey merkezleme */
-  transform: translate(-50%, -50%); /* Merkezleme için transform kullanır */
-  font-size: 1.2rem; /* Yazı boyutunu ayarlar */
-  opacity: 1; /* Başlangıçta görünür */
-  transition: opacity 0.3s ease-out; /* Opaklık geçişini ayarlar */
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  font-size: 1.2rem; 
+  opacity: 1; 
+  transition: opacity 0.3s ease-out; /
 }
 
 .tool-list > li:hover > .tl-name {
-  opacity: 0; /* Mouse dairenin üstünde durduğunda gizler */
+  opacity: 0; 
 }
 
 .tool-list > li > .tl-exp {
-  top: calc(50% + 1.4rem); /* Yatay merkezleme + 1.4rem üstünde */
-  left: 50%; /* Dikey merkezleme */
+  top: calc(50% + 1.4rem); 
+  left: 50%; 
   top: 50%;
-  transform: translate(-50%, -50%); /* Merkezleme için transform kullanır */
-  font-size: 3rem; /* Yazı boyutunu ayarlar */
-  opacity: 0; /* Başlangıçta görünmez */
-  transition: opacity 0.3s ease-out; /* Opaklık geçişini ayarlar */
+  transform: translate(-50%, -50%); 
+  font-size: 3rem; 
+  opacity: 0; 
+  transition: opacity 0.3s ease-out; 
 }
 .tool-list > li:hover > .tl-exp {
-  opacity: 1; /* Mouse üzerine gelindiğinde görünür yapar */
+  opacity: 1; 
 }
 
-/* Interests Section */
+
 .outer-frame {
   border: 1px solid var(--color-gray-dark-3);
   border-radius: 5px;
