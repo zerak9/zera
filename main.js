@@ -2,13 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     var preloader = document.getElementById("preloader");
     preloader.classList.add("hide");
-  }, 0);
+  }, 1500);
 });
 const mainContent = document.getElementById("main-content");
 
 setTimeout(() => {
   mainContent.classList.add("fade-in");
-}, 0);
+}, 1500);
 
 document.querySelectorAll(".cbar").forEach((cbar) => {
   cbar.addEventListener("mouseenter", () => {
