@@ -1,0 +1,2 @@
+1. okullara link ekle üstüne gelince altı çizilsin
+2. sol kenardaki simgeleri düzelt
