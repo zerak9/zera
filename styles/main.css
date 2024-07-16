@@ -198,7 +198,7 @@ html {
   width: 100%;
 }
 
-.button.cv {
+button.cv {
   padding: 0;
   margin: 0;
   border: none;
@@ -206,7 +206,7 @@ html {
   cursor: pointer;
 }
 
-.button.cv {
+button.cv {
   --primary-color: var(--profile-theme);
   --hovered-color: var(--color-blue-dark-1);
   position: relative;
@@ -217,14 +217,14 @@ html {
   align-items: center;
 }
 
-.button.cv p {
+button.cv p {
   margin: 0;
   position: relative;
   font-size: 18px;
   color: var(--primary-color);
 }
 
-.button.cv::after {
+button.cv::after {
   position: absolute;
   content: "";
   width: 0;
@@ -235,7 +235,7 @@ html {
   transition: 0.3s ease-out;
 }
 
-.button.cv p::before {
+button.cv p::before {
   position: absolute;
   /*   box-sizing: border-box; */
   content: "CV";
@@ -246,21 +246,21 @@ html {
   transition: 0.3s ease-out;
 }
 
-.button.cv:hover::after {
+button.cv:hover::after {
   width: 100%;
 }
 
-.button.cv:hover p::before {
+button.cv:hover p::before {
   width: 100%;
 }
 
-.button.cv:hover svg {
+button.cv:hover svg {
   transform: translateX(4px);
-  color: var(--hovered-color);
+  color: var(--profile-theme);
 }
 
-.button.cv svg {
-  color: var(--primary-color);
+button.cv svg {
+  color: var(--profile-theme);
   transition: 0.2s;
   position: relative;
   width: 15px;
