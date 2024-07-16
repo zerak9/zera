@@ -416,14 +416,33 @@ html {
   opacity: 1; 
 }
 
-.flag{
-  width: 135px;
-  height: 135px;
-  border-radius: 50%;
-  margin-left: 0.665px;
-  margin-top: 21px;
-  display: block;
+.flag {
+  width: 135px;  
+  height: 135px;  
+  border-radius: 50%;  
+  margin-left: auto;  
+  margin-right: auto;  
+  margin-top: 21px;  
+  display: block;  
 }
+
+@media only screen and (max-width: 480px) {
+  .flag {
+    width: 90px;  
+    height: 90px;  
+    margin-top: 14px;  
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 764px) {
+  .flag {
+    width: 110px;  
+    height: 110px; 
+    margin-top: 15px;  
+  }
+}
+
+
 
 
 .outer-frame {
