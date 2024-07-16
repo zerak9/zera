@@ -428,8 +428,8 @@ html {
 
 @media only screen and (max-width: 480px) {
   .flag {
-    width: 90px;  
-    height: 90px;  
+    width: 60px;  
+    height: 60px;  
     margin-top: 14px;  
   }
 }
