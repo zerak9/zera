@@ -11,8 +11,8 @@
   justify-content: center;
   align-items: center;
   opacity: 1;
-  transition: opacity 0.5s ease-in-out; 
-  z-index: 9999; 
+  transition: opacity 0.5s ease-in-out;
+  z-index: 9999;
   background: radial-gradient(
     592px at 48.2% 50%,
     rgba(255, 255, 249, 0.6) 0%,
@@ -27,7 +27,7 @@
 
 #preloader.hide {
   opacity: 0;
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 .container {
@@ -38,7 +38,7 @@
 }
 
 .arrow {
-  border: solid #000000;
+  border: solid #151616;
   border-width: 0 4px 4px 0;
   display: inline-block;
   padding: 10px;
@@ -60,6 +60,7 @@
   display: inline-block;
   margin: 10px;
   position: relative;
+  color: #151616;
 }
 
 .wave-text a {
@@ -142,4 +143,3 @@
 .wave-text span:nth-child(10) {
   animation-delay: 0.9s;
 }
-

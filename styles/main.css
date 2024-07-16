@@ -147,7 +147,15 @@ html {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
+  position: relative;
+  
 }
+.intro-section.contact{
+  margin-top: 15px;
+}
+  
+
+
 .about .paragraph {
   text-align: justify;
 }
@@ -189,6 +197,113 @@ html {
 .link span:hover::after {
   width: 100%;
 }
+
+button.cv {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+button.cv {
+  --primary-color: var(--profile-theme);
+  --hovered-color: var(--color-blue-dark-1);
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+button.cv p {
+  margin: 0;
+  position: relative;
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+button.cv::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+
+button.cv p::before {
+  position: absolute;
+  /*   box-sizing: border-box; */
+  content: "CV";
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+button.cv:hover::after {
+  width: 100%;
+}
+
+button.cv:hover p::before {
+  width: 100%;
+}
+
+button.cv:hover svg {
+  transform: translateX(4px);
+  color: var(--hovered-color);
+}
+
+button.cv svg {
+  color: var(--primary-color);
+  transition: 0.2s;
+  position: relative;
+  width: 15px;
+  transition-delay: 0.2s;
+}
+
+
+
+
+
+
+.language-switch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+}
+
+.combined-button {
+  display: flex;
+  align-items: center;
+}
+
+.language-button {
+  background-color: var(--profile-theme);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-right: 5px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.language-button:hover {
+  background-color: var(--color-tiffany);
+}
+
+.language-button.active {
+  background-color: var(--color-blue-dark-1);
+}
+
 
 /* Detail section overall setting*/
 .detail {
@@ -408,7 +523,7 @@ html {
   left: 50%; 
   top: 50%;
   transform: translate(-50%, -50%); 
-  font-size: 1.2rem; 
+  font-size: 1rem; 
   opacity: 0; 
   transition: opacity 0.3s ease-out; 
 }

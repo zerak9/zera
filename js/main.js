@@ -20,12 +20,6 @@ document.querySelectorAll(".cbar").forEach((cbar) => {
   });
 });
 
-const interestsElement = document.querySelector(".detail-section.interests");
-
-interestsElement.addEventListener("click", () => {
-  window.location.href = "interests.html";
-});
-
 document.querySelectorAll(".flag-icon").forEach((flagIcon) => {
   flagIcon.addEventListener("mouseenter", () => {
     flagIcon.parentElement.querySelector(".tl-name").classList.add("hidden");
@@ -35,4 +29,5 @@ document.querySelectorAll(".flag-icon").forEach((flagIcon) => {
     flagIcon.parentElement.querySelector(".tl-name").classList.remove("hidden");
   });
 });
+
 
